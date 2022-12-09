@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/index.js"></script>
+
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="menu.css" />
+    <link rel="stylesheet" href="css/ress.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>MORP</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a href="/index.html"
+        ><img class="logo" src="/img/MORP_logo.png" alt="MORP"
+      /></a>
+    </header>
+
+    <h2>
+      <p class="top">
+        M<span class="js-morp">O</span>R<span class="js-morp">P</span> is
+        <span class="js-morp">a</span><br />
+        var<span class="js-morp">i</span>a<span class="js-morp">b</span>le
+        i<span class="js-morp">c</span>on
+        <span class="js-morp">t</span>hat<br /><span class="js-morp">c</span
+        >han<span class="js-morp">g</span>es s<span class="js-morp">h</span
+        >ap<span class="js-morp">e</span>.
+      </p>
+    </h2>
+
+    <div id="js-cover" class="cover">
+      <div class="js-cover-char cover-char ff-morp">loading</div>
+    </div>
+
+    <div class="movie">
+      <video src="/img/morp.mp4" autoplay loop muted width="50%"></video>
+    </div>
+
+    <div class="morp-try"><h1>TRY</h1></div>
+    <form method="play" action="example.cgi">
+      <textarea
+        name="morp-play"
+        cols="15"
+        rows="5"
+        placeholder="試し打ちしてみて下さい！
+        "
+      ></textarea>
+    </form>
+    <div id="js-try" class="try">
+      <div class="try-char">
+        <span id="js-try-char" class="ff-morp">Enjoy MORP</span>!
+      </div>
+    </div>
+
+    <script src="js/lib/webfontloader.js"></script>
+    <!-- ▼▼▼ アニメーション用のライブラリ https://greensock.com/docs/v3/GSAP ▼▼▼ -->
+    <script src="js/lib/gsap.min.js"></script>
+    <!-- ▼▼▼ テキストを文字、単語、行に分割することができるプラグイン https://greensock.com/docs/v3/Plugins/SplitText ▼▼▼ -->
+    <script src="js/lib/SplitText.min.js"></script>
+    <!-- ▼▼▼ スクロールをきっかけにアニメーションさせるプラグイン https://greensock.com/docs/v3/Plugins/ScrollTrigger ▼▼▼ -->
+    <!-- 参考 URL: https://ics.media/entry/210426/ -->
+    <script src="js/lib/ScrollTrigger.min.js"></script>
+    <script src="js/MORP.js"></script>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>

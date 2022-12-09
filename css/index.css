@@ -1,0 +1,78 @@
+/* body {
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  font-smooth: always;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+} */
+
+/* 可変フォントを計算する js */
+/* https://jsfiddle.net/e1b0twhm/3/ */
+
+/* MORP フォントにするクラス */
+.ff-morp {
+  font-family: "MORP", sans-serif;
+  font-weight: 400;
+  font-variation-settings: "morp" var(--morp);
+}
+
+h1 {
+  color: #222;
+  font-family: "Quicksand", sans-serif;
+  font-size: clamp(30px, calc(7vw + -12px), 60px);
+  text-align: center;
+  margin: 120px;
+}
+
+h2 {
+  color: #222;
+  font-family: "Quicksand", sans-serif;
+  font-size: 9.5rem;
+  margin-bottom: 60px;
+}
+
+.cover {
+  background-color: #ac5f4c;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.cover-char {
+  color: #d8bd8b;
+  font-size: 80px;
+  font-size: clamp(80px, calc(9vw + 26px), 120px);
+}
+
+.try {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.try-char {
+  color: #222;
+  font-family: "Quicksand", sans-serif;
+  font-size: 80px;
+  font-size: clamp(30px, calc(7vw + -12px), 60px);
+}
+
+.movie {
+  text-align: center;
+  margin-top: 20%;
+}
+
+form {
+  text-align: center;
+  font-family: "MORP", sans-serif;
+  font-weight: 400;
+  font-variation-settings: "morp" var(--morp);
+  font-size: 4em;
+}

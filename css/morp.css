@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+/* HEADER
+--------------------------------- */
+.logo {
+  width: 7%;
+  margin-top: 12px;
+  margin-left: 12px;
+}
+
+.morp {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.morp p {
+  display: inline-block;
+  text-align: left;
+}
+
+.mojiry-tree {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.mojiry-tree p {
+  display: inline-block;
+  text-align: left;
+}
+
+h3 {
+  color: #ac5f4c;
+}

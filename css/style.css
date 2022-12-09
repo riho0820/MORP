@@ -1,0 +1,19 @@
+html {
+  font-size: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+/* HEADER
+  --------------------------------- */
+.logo {
+  width: 7%;
+  margin-top: 12px;
+  margin-left: 12px;
+}
