@@ -69,10 +69,54 @@ h2 {
   margin-top: 20%;
 }
 
-form {
-  text-align: center;
+.textarea-wrapper {
+  margin: 0 auto;
+  width: 70%;
+}
+
+textarea {
+  display: block;
+  width: 100%;
   font-family: "MORP", sans-serif;
   font-weight: 400;
   font-variation-settings: "morp" var(--morp);
   font-size: 4em;
+}
+
+.input-range {
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  background: #8acdff;
+  height: 14px;
+  width: 100%;
+  border-radius: 10px;
+  border: solid 3px #dff1ff;
+  outline: 0;
+  /* アウトラインを消して代わりにfocusのスタイルをあてる */
+}
+.input-range:focus {
+  box-shadow: 0 0 3px #00a1ff;
+}
+.input-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: #53aeff;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+}
+.input-range::-moz-range-thumb {
+  background: #53aeff;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+  border: none;
+}
+.input-range::-moz-focus-outer {
+  border: 0;
+}
+.input-range:active::-webkit-slider-thumb {
+  box-shadow: 0px 5px 10px -2px rgba(0, 0, 0, 0.3);
 }

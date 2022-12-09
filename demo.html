@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <style>
+      /*
+            * "Roboto-Flex" licensed under the SIL Open Font License
+            * https://github.com/TypeNetwork/Roboto-Flex
+            */
+      @font-face {
+        font-family: "MORP";
+        src: url("../fonts/morp.ttf");
+        font-weight: 400;
+      }
+      :root {
+        --morp: 900;
+      }
+      p {
+        font-size: 48px;
+        font-family: "MORP", sans-serif;
+        font-variation-settings: "morp" var(--morp);
+      }
+    </style>
+  </head>
+  <body>
+    <p id="text">hello world</p>
+    <label
+      >MORP<input
+        id="morp"
+        type="range"
+        min="0"
+        max="900"
+        name="morp"
+        step="1"
+        value="100"
+    /></label>
+
+    <script defer>
+      const morpSlider = document.getElementById("morp");
+
+      let morpValue = 900;
+
+      morpSlider.addEventListener("input", (e) => {
+        morpValue = e.target.value;
+        setValue("--morp", morpValue);
+      });
+
+      const setValue = (axis, value) => {
+        document.getElementById("text").style.setProperty(axis, value);
+      };
+    </script>
+  </body>
+</html>

@@ -39,15 +39,29 @@
     </div>
 
     <div class="morp-try"><h1>TRY</h1></div>
-    <form method="play" action="example.cgi">
+
+    <div class="textarea-wrapper">
       <textarea
+        id="js-morp-text"
+        class="morp-text"
         name="morp-play"
         cols="15"
-        rows="5"
-        placeholder="試し打ちしてみて下さい！
-        "
+        rows="3"
+        placeholder="試し打ちしてみて下さい！ "
       ></textarea>
-    </form>
+    </div>
+    <div style="max-width: 350px; margin: 2rem auto">
+      <input
+        type="range"
+        id="morp-range"
+        name="foo"
+        min="0"
+        max="900"
+        step="1"
+        value="0"
+      />
+    </div>
+
     <div id="js-try" class="try">
       <div class="try-char">
         <span id="js-try-char" class="ff-morp">Enjoy MORP</span>!

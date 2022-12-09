@@ -63,3 +63,12 @@ WebFont.load({
     });
   },
 });
+
+const morpSlider = document.getElementById("morp-range");
+
+morpSlider.addEventListener("input", (e) => {
+  const morpValue = e.target.value;
+  document
+    .getElementById("js-morp-text")
+    .style.setProperty("--morp", morpValue);
+});
