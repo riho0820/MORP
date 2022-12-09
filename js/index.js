@@ -6,7 +6,7 @@ WebFont.load({
   // 自分のフォントファイルを読み込んでる
   custom: {
     families: ["MORP:n4"],
-    urls: ["/css/fonts.css"],
+    urls: ["css/fonts.css"],
   },
   google: {
     families: ["Quicksand:700"],
