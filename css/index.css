@@ -11,25 +11,41 @@
 /* https://jsfiddle.net/e1b0twhm/3/ */
 
 /* MORP フォントにするクラス */
+
+body {
+  background-color: #c5b098;
+}
+
 .ff-morp {
   font-family: "MORP", sans-serif;
   font-weight: 400;
   font-variation-settings: "morp" var(--morp);
 }
 
+.top-page {
+  margin-bottom: 80px;
+}
+
+.top {
+  font-family: "Lexend", sans-serif;
+
+  font-weight: 400;
+}
+
 h1 {
-  color: #222;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Lexend";
+  font-weight: 400;
   font-size: clamp(30px, calc(7vw + -12px), 60px);
   text-align: center;
   margin: 120px;
 }
 
 h2 {
-  color: #222;
-  font-family: "Quicksand", sans-serif;
-  font-size: 9.5rem;
-  margin-bottom: 60px;
+  color: #343f46;
+  font-family: "Lexend";
+  font-size: 9.4rem;
+  margin: 10px;
+  padding-bottom: 70px;
 }
 
 .cover {
@@ -55,23 +71,35 @@ h2 {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  background-color: #ac5f4c;
+  z-index: -1;
 }
 
 .try-char {
-  color: #222;
-  font-family: "Quicksand", sans-serif;
+  color: #d8bd8b;
+  font-family: "Lexend";
   font-size: 80px;
   font-size: clamp(30px, calc(7vw + -12px), 60px);
+  z-index: 1;
 }
 
 .movie {
   text-align: center;
-  margin-top: 20%;
+  background-color: #343f46;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.morp-try {
+  color: #343f46;
 }
 
 .textarea-wrapper {
   margin: 0 auto;
   width: 70%;
+  border-radius: 0.67em; /* 角丸 */
+  padding: 0.5em; /* 内側の余白量 */
+  border: 2px solid #343f46; /* 背景色 */
 }
 
 textarea {
@@ -80,43 +108,25 @@ textarea {
   font-family: "MORP", sans-serif;
   font-weight: 400;
   font-variation-settings: "morp" var(--morp);
-  font-size: 4em;
+  font-size: 5em;
+  color: #343f46;
 }
 
-.input-range {
-  -webkit-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  background: #8acdff;
-  height: 14px;
-  width: 100%;
-  border-radius: 10px;
-  border: solid 3px #dff1ff;
-  outline: 0;
-  /* アウトラインを消して代わりにfocusのスタイルをあてる */
+.morp-range-1 {
+  margin-top: 120px;
+  text-align: center;
 }
-.input-range:focus {
-  box-shadow: 0 0 3px #00a1ff;
+
+input {
+  width: 30%;
+  margin-bottom: 120px;
 }
-.input-range::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  background: #53aeff;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
-}
-.input-range::-moz-range-thumb {
-  background: #53aeff;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
-  border: none;
-}
-.input-range::-moz-focus-outer {
-  border: 0;
-}
-.input-range:active::-webkit-slider-thumb {
-  box-shadow: 0px 5px 10px -2px rgba(0, 0, 0, 0.3);
+
+::placeholder {
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
 }

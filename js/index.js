@@ -48,7 +48,7 @@ WebFont.load({
       fadeOut: {
         delay: 0.0, // フェードアウトがはじまるまでの時間
       },
-      fontFamily: "Quicksand",
+      fontFamily: "Lexend",
       fontVariationSettings: "normal",
       morph: {
         delay: 0.0, // モーフィングがはじまるまでの時間

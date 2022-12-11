@@ -9,26 +9,34 @@
     <link rel="stylesheet" href="css/ress.min.css" />
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allerta&family=Lexend:wght@200;300;400;500;600;700&family=Roboto+Mono:wght@100;200;300;400;500;600;700&family=Space+Mono:wght@400;700&family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
+
     <title>MORP</title>
   </head>
   <body>
-    <header class="page-header">
-      <a href="/index.html"
-        ><img class="logo" src="img/MORP_logo.png" alt="MORP"
-      /></a>
-    </header>
+    <div class="top-page">
+      <header class="page-header">
+        <a href="/index.html"
+          ><img class="logo" src="img/MORP_logo.png" alt="MORP"
+        /></a>
+      </header>
 
-    <h2>
-      <p class="top">
-        M<span class="js-morp">O</span>R<span class="js-morp">P</span> is
-        <span class="js-morp">a</span><br />
-        var<span class="js-morp">i</span>a<span class="js-morp">b</span>le
-        i<span class="js-morp">c</span>on
-        <span class="js-morp">t</span>hat<br /><span class="js-morp">c</span
-        >han<span class="js-morp">g</span>es s<span class="js-morp">h</span
-        >ap<span class="js-morp">e</span>.
-      </p>
-    </h2>
+      <h2>
+        <p class="top">
+          M<span class="js-morp">O</span>R<span class="js-morp">P</span> is
+          <span class="js-morp">a</span><br />
+          var<span class="js-morp">i</span>a<span class="js-morp">b</span>le
+          i<span class="js-morp">c</span>on
+          <span class="js-morp">t</span>hat<br /><span class="js-morp">c</span
+          >han<span class="js-morp">g</span>es s<span class="js-morp">h</span
+          >ap<span class="js-morp">e</span>.
+        </p>
+      </h2>
+    </div>
 
     <div id="js-cover" class="cover">
       <div class="js-cover-char cover-char ff-morp">loading</div>
@@ -38,28 +46,31 @@
       <video src="img/morp.mp4" autoplay loop muted width="50%"></video>
     </div>
 
-    <div class="morp-try"><h1>TRY</h1></div>
+    <div class="morp-back">
+      <div class="morp-try"><h1>TRY</h1></div>
 
-    <div class="textarea-wrapper">
-      <textarea
-        id="js-morp-text"
-        class="morp-text"
-        name="morp-play"
-        cols="15"
-        rows="3"
-        placeholder="試し打ちしてみて下さい！ "
-      ></textarea>
-    </div>
-    <div style="max-width: 350px; margin: 2rem auto">
-      <input
-        type="range"
-        id="morp-range"
-        name="foo"
-        min="0"
-        max="900"
-        step="1"
-        value="0"
-      />
+      <div class="textarea-wrapper">
+        <textarea
+          id="js-morp-text"
+          class="morp-text"
+          name="morp-play"
+          cols="15"
+          rows="3"
+          placeholder="アルファベットや数字を打ち込んでみて下さい！ "
+        ></textarea>
+      </div>
+      <div class="morp-range-1">
+        <input
+          type="range"
+          id="morp-range"
+          name="foo"
+          min="0"
+          max="900"
+          step="1"
+          value="0"
+          style="accent-color: #ac5f4c"
+        />
+      </div>
     </div>
 
     <div id="js-try" class="try">
