@@ -16,6 +16,10 @@ body {
   background-color: #c5b098;
 }
 
+.page-header {
+  margin: 10px;
+}
+
 .ff-morp {
   font-family: "MORP", sans-serif;
   font-weight: 400;
@@ -71,7 +75,7 @@ h2 {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  background-color: #ac5f4c;
+  background-color: #343f46;
   z-index: -1;
 }
 
