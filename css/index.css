@@ -27,6 +27,8 @@ body {
 }
 
 .top-page {
+  height: 100vh;
+  min-height: 800px;
   margin-bottom: 80px;
 }
 
@@ -53,7 +55,8 @@ h2 {
   margin: 10px;
   padding-bottom: 70px;
 }
-a {
+
+/* a {
   position: absolute;
   bottom: 20px;
   left: 50%;
@@ -63,9 +66,9 @@ a {
   transform: translate(0, -50%);
   text-decoration: none;
   padding-top: 70px;
-}
+} */
 
-a span {
+/* a span {
   position: absolute;
   top: 0;
   left: 50%;
@@ -79,7 +82,8 @@ a span {
   -webkit-animation: sdb 1.5s infinite;
   animation: sdb 1.5s infinite;
   box-sizing: border-box;
-}
+} */
+
 @-webkit-keyframes sdb {
   0% {
     -webkit-transform: rotate(-45deg) translate(0, 0);
@@ -218,21 +222,16 @@ input {
   text-align: center;
   font-size: 12px;
   font-size: clamp(12px, calc(1vw + 8px), 24px);
+  margin: 0 0 100px;
 }
 
-.download-p a {
-  /* left: 41%; */
-  z-index: 100;
-  display: inline-block;
-
-  -webkit-transform: translate(0, 0%);
-  transform: translate(0, 0%);
-  text-decoration: none;
-  padding-top: 0px;
-  padding-bottom: 10%;
+.download-link {
+  display: block;
+  width: 100px;
+  margin: 0 auto;
 }
 
-.download-p a img {
+.download-link img {
   width: 100%;
   height: auto;
 }
