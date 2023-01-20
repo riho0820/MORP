@@ -39,7 +39,8 @@ body {
 h1 {
   font-family: "Lexend";
   font-weight: 400;
-  font-size: clamp(30px, calc(7vw + -12px), 60px);
+  font-size: 30px;
+  font-size: clamp(30px, calc(4vw + 15px), 70px);
   text-align: center;
   margin: 120px;
 }
@@ -118,8 +119,8 @@ a span {
 
 .cover-char {
   color: #d8bd8b;
-  font-size: 80px;
-  font-size: clamp(80px, calc(9vw + 26px), 120px);
+  font-size: 50px;
+  font-size: clamp(50px, calc(8vw + 20px), 118px);
 }
 
 .try {
@@ -142,10 +143,17 @@ a span {
 }
 
 .movie {
-  text-align: center;
+  width: 100%;
+
+  margin: 0 auto;
   background-color: #343f46;
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+.center {
+  margin: 0 auto;
+  display: block;
 }
 
 .morp-try {
@@ -181,7 +189,8 @@ input {
 }
 
 ::placeholder {
-  font-size: 30px;
+  font-size: 10px;
+  font-size: clamp(10px, calc(2vw + 3px), 30px);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -207,11 +216,12 @@ input {
   color: #343f46;
   margin: 0 auto;
   text-align: center;
-  font-size: 28px;
+  font-size: 12px;
+  font-size: clamp(12px, calc(1vw + 8px), 24px);
 }
 
 .download-p a {
-  left: 41%;
+  /* left: 41%; */
   z-index: 100;
   display: inline-block;
 
@@ -223,6 +233,26 @@ input {
 }
 
 .download-p a img {
-  width: 60%;
+  width: 100%;
   height: auto;
+}
+
+/* //////////スマホ版/////////// */
+
+@media screen and (max-width: 480px) {
+  h1 {
+    margin: 60px;
+  }
+
+  .center {
+    width: 85%;
+  }
+
+  .try-char {
+    color: #d8bd8b;
+    font-family: "Lexend";
+    font-size: 80px;
+    font-size: clamp(30px, calc(7vw + -12px), 60px);
+    z-index: 1;
+  }
 }
