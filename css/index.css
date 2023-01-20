@@ -47,7 +47,8 @@ h1 {
 h2 {
   color: #343f46;
   font-family: "Lexend";
-  font-size: 9.4rem;
+  font-size: 32px;
+  font-size: clamp(32px, calc(13vw + -17px), 150px);
   margin: 10px;
   padding-bottom: 70px;
 }

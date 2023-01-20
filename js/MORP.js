@@ -6,7 +6,7 @@ class MORP {
       fadeOut: {
         delay: 2.0, // フェードアウトがはじまるまでの時間
       },
-      fontFamily: 'MORP',
+      fontFamily: "MORP",
       fontVariationSettings: `'morp' var(--morp)`,
       morph: {
         delay: 2.0, // モーフィングがはじまるまでの時間
@@ -20,52 +20,52 @@ class MORP {
 
     this.assets = [];
     this.options = { ...defaults, ...vars };
-    this.splitText = new SplitText(targets, { type: 'chars' });
+    this.splitText = new SplitText(targets, { type: "chars" });
     this.tl = gsap.timeline(this.options);
 
     this.splitText.chars.forEach((char) => {
       const computedStyle = getComputedStyle(char);
       // 元の文字と置き変える要素を作る
-      const far = document.createElement('span');
+      const far = document.createElement("span");
       // 元の文字に重ねる span 要素（アイコン）を作る
-      const nia = document.createElement('span');
-      const niaChar = document.createElement('span');
+      const nia = document.createElement("span");
+      const niaChar = document.createElement("span");
 
       // 作った span 要素に文字列を指定する
       far.innerText = char.innerText;
       niaChar.innerText = char.innerText;
 
       // 作った span 要素の class 属性を設定する
-      far.classList.add('js-morp-for');
-      nia.classList.add('js-morp-nia');
-      nia.classList.add('js-morp-nia_Char');
+      far.classList.add("js-morp-for");
+      nia.classList.add("js-morp-nia");
+      nia.classList.add("js-morp-nia_Char");
 
       // 元の文字と置き変える span 要素のスタイルを設定する
-      far.style.display = 'inline-block';
+      far.style.display = "inline-block";
 
       // 元の文字に重ねる span 要素（アイコン）のスタイルを設定する
       // 元の文字の後ろに不可視で配置する
-      nia.style.display = 'inline-block';
-      nia.style.left = '50%';
-      nia.style.opacity = '0';
-      nia.style.position = 'absolute';
-      nia.style.top = '50%';
-      nia.style.transform = 'translate(-50%, -50%)';
-      nia.style.transformOrigin = 'center';
-      nia.style.userSelect = 'none';
-      nia.style.visibility = 'hidden';
-      nia.style.zIndex = '-1';
+      nia.style.display = "inline-block";
+      nia.style.left = "50%";
+      nia.style.opacity = "0";
+      nia.style.position = "absolute";
+      nia.style.top = "50%";
+      nia.style.transform = "translate(-50%, -50%)";
+      nia.style.transformOrigin = "center";
+      nia.style.userSelect = "none";
+      nia.style.visibility = "hidden";
+      nia.style.zIndex = "0";
 
-      niaChar.style.display = 'inline-block';
+      niaChar.style.display = "inline-block";
       niaChar.style.fontFamily = this.options.fontFamily;
-      niaChar.style.fontWeight = '400';
+      niaChar.style.fontWeight = "400";
       niaChar.style.fontVariationSettings = this.options.fontVariationSettings;
-      niaChar.style.lineHeight = '1';
-      niaChar.style.transform = 'scale(1.0)';
-      niaChar.style.transformOrigin = 'center';
+      niaChar.style.lineHeight = "1";
+      niaChar.style.transform = "scale(1.0)";
+      niaChar.style.transformOrigin = "center";
 
       // 元の文字を削除する
-      char.innerHTML = '';
+      char.innerHTML = "";
 
       // appendChild を使って入れ子にして、以下の状態にする
       // <span class="js-morp-nia">
@@ -83,7 +83,7 @@ class MORP {
         nia,
         width: () => {
           const fontSize = parseFloat(
-            computedStyle.getPropertyValue('font-size')
+            computedStyle.getPropertyValue("font-size")
           );
           const niaDOMRect = niaChar.getBoundingClientRect();
 
@@ -120,10 +120,10 @@ class MORP {
       this.tl.fromTo(
         nia,
         {
-          '--morp': 0,
+          "--morp": 0,
         },
         {
-          '--morp': 1000,
+          "--morp": 1000,
           duration: 1,
           ease: Power2.easeOut,
         },
@@ -158,7 +158,7 @@ class MORP {
             autoAlpha: 1,
             duration: 0.6,
             ease: Power2.easeIn,
-            width: 'auto',
+            width: "auto",
           },
           `sequence0+=${
             this.options.stagger * i +
