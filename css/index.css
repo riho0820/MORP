@@ -235,6 +235,15 @@ input {
   transform: translate(-50%, -50%);
 }
 
+@media screen and (max-width: 480px) {
+  ::placeholder {
+    top: auto;
+    left: auto;
+    margin-right: auto;
+    transform: none;
+  }
+}
+
 .download {
   color: #d8bd8b;
   position: relative;
