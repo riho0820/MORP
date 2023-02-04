@@ -84,7 +84,7 @@ h2 {
 }
 @media screen and (max-width: 480px) {
   h2 {
-    padding: 0 10 80px;
+    padding: 20px 10px 80px;
   }
 }
 
