@@ -82,6 +82,11 @@ h2 {
   font-size: clamp(32px, calc(13vw + -17px), 140px);
   padding: 0 10px;
 }
+@media screen and (max-width: 480px) {
+  .page-header {
+    padding: 0 0 40px;
+  }
+}
 
 /* a {
   position: absolute;
