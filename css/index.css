@@ -19,7 +19,7 @@ body {
 }
 
 .page-header {
-  margin: 10px;
+  padding: 0 10px;
 }
 
 .ff-morp {
@@ -31,7 +31,10 @@ body {
 .top-page {
   height: 100vh;
   min-height: 800px;
-  margin-bottom: 80px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .top {
@@ -53,9 +56,8 @@ h2 {
   color: #343f46;
   font-family: "Lexend";
   font-size: 32px;
-  font-size: clamp(32px, calc(13vw + -17px), 150px);
-  margin: 10px;
-  padding-bottom: 70px;
+  font-size: clamp(32px, calc(13vw + -17px), 140px);
+  padding: 0 10px;
 }
 
 /* a {
