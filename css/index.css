@@ -226,6 +226,7 @@ input {
 }
 
 ::placeholder {
+  color: #343f46;
   font-size: 10px;
   font-size: clamp(10px, calc(2vw + 3px), 30px);
   position: absolute;
