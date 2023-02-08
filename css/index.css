@@ -258,6 +258,13 @@ input {
   text-align: center;
 }
 
+@media screen and (max-width: 480px) {
+  .download {
+    width: 100%;
+    height: auto;
+  }
+}
+
 .download-p {
   display: inline-block;
   color: #343f46;
