@@ -204,6 +204,12 @@ h2 {
   border: 2px solid #343f46; /* 背景色 */
 }
 
+@media screen and (max-width: 480px) {
+  .textarea-wrapper {
+    margin-bottom: 120px;
+  }
+}
+
 textarea {
   display: block;
   width: 100%;
