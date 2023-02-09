@@ -220,11 +220,6 @@ textarea {
   color: #343f46;
   position: relative;
 }
-@media screen and (max-width: 480px) {
-  textarea {
-    margin-bottom: 120px;
-  }
-}
 
 .morp-range-1 {
   margin-top: 120px;
@@ -290,6 +285,12 @@ input {
   display: block;
   width: 100px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 480px) {
+  .download-link {
+    padding-bottom: 120px;
+  }
 }
 
 .download-link img {
